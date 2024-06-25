@@ -1,0 +1,27 @@
+@if (clientData) {
+<section class="client-data">
+    <div class="client-data__info">
+        <h1 class="client-data__title">Perfila a tu cliente</h1>
+        <p class="client-data__text">Para comenzar con el perfilamiento ingresa el número AT&T de tu cliente a 10
+            dígitos</p>
+        <p class="client-data__text">Enviaremos un mensaje de texto con un código al número AT&T ingresado, pídele a tu
+            cliente</p>
+        <p class="client-data__text">que te proporcione este número para poder garantizar la seguridad de sus datos</p>
+    </div>
+
+    <form action="submit" class="client-data__form" [formGroup]="numberPhone">
+        <div class="client-data__form-input">
+            <label id="numPhone">Ingresa el número de AT&T del cliente </label>
+            <input type="text" formControlName="numPhone" required autocomplete="off"
+                placeholder="Número celular a 10 dígitos">
+        </div>
+        @if(numberPhone.controls['numPhone'].invalid){
+        <p class="text-danger">El número debe ser a 10 dígitos</p>
+        }
+
+        <button class="button-send-data" (click)="validatorNumber()">Enviar código</button>
+    </form>
+</section>
+} @else if (customerAutentication) {
+<app-customer-autentication></app-customer-autentication>
+}

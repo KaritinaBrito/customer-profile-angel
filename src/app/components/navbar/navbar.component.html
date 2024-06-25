@@ -1,0 +1,14 @@
+<nav class="navbar-component">
+    <ul class="navar-component__menu">
+        <button class="button-back" (click)="goBack">
+            <div class="button-back__info">
+                <mat-icon aria-label="keyboard_arrow_left" fontIcon="keyboard_arrow_left"></mat-icon>
+                <p>Regresar</p>
+            </div>
+        </button>
+        <a routerLink="/client-data" routerLinkActive="activebutton" class="option-menu">Datos del cliente</a>
+        <a routerLink="/profiling" routerLinkActive="activebutton" class="option-menu">Perfilamiento</a>
+        <a routerLink="/plans" routerLinkActive="activebutton" class="option-menu">Planes</a>
+        <a routerLink="/folio" routerLinkActive="activebutton" class="option-menu">Folio</a>
+    </ul>
+</nav>

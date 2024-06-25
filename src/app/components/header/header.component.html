@@ -1,0 +1,16 @@
+<header class="header-component">
+    <section class="header-component__right">
+        <img src="/logo-att.png" alt="logo">
+        <h2>Customer profiling</h2>
+    </section>
+    <section class="header-component__left">
+        <button mat-button [matMenuTriggerFor]="menu" class="header-component__left-user">
+            <h3>{{userData.name}}</h3>
+            <mat-icon aria-label="keyboard_arrow_down" fontIcon="keyboard_arrow_down"></mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item><mat-icon aria-label="logout icon" fontIcon="logout"></mat-icon>
+                Salir de la sesión</button>
+        </mat-menu>
+    </section>
+</header>

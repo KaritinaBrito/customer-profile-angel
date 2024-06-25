@@ -1,0 +1,38 @@
+@if(customerAutentication){
+<section class="customer-autentication">
+    <div class="customer-autentication__title">
+        <h1>Autenticación del cliente</h1>
+        <p>Ingresa el código de seguridad que te proporcionará el cliente</p>
+    </div>
+    <div class="customer-autentication__validation">
+        <p class="validation-subt">Enviado a:</p>
+        <p class="validation-number">55 8182 2834</p>
+        <div class="customer-autentication__code">
+            <label for="num1"></label>
+            <input type="text" id="num1">
+            <label for="num2"></label>
+            <input type="text" id="num2">
+            <label for="num3"></label>
+            <input type="text" id="num3">
+            <label for="num4"></label>
+            <input type="text" id="num4">
+        </div>
+        <button class="button-validation" (click)="validationCode()">Validar</button>
+    </div>
+    <div class="customer-autentication__resend">
+        <p>Si no lo recibe, solicita otro código en:</p>
+        <p>30 segundos</p>
+        <a href="/">Reenviar código</a>
+    </div>
+    @if(codeSuccess){
+    <div class="">
+        <button class="button-success"><img src="/check_circle.svg" alt="check logo">Autenticación
+            correcta</button>
+    </div>
+    }
+</section>
+}
+
+@else if (singleCard) {
+<app-single-customer></app-single-customer>
+}

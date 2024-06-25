@@ -1,0 +1,108 @@
+.customer-autentication {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customer-autentication__title h1 {
+    font-size: 18px;
+    color: var(--text-black);
+    font-weight: 700;
+    text-align: center;
+}
+
+.customer-autentication__title p {
+    font-size: 16px;
+    color: var(--text-black);
+    text-align: center;
+}
+
+.customer-autentication__validation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.validation-subt {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.validation-number {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.customer-autentication__code {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.customer-autentication__code input {
+    margin-top: 15px;
+    width: 43px;
+    height: 55px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid var(--gray-inactive);
+}
+
+.customer-autentication__code input:focus {
+    border: 1px solid var(--blue-active);
+}
+
+.button-validation {
+    padding: 5px 20px;
+    color: white;
+    background: var(--blue-active);
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.customer-autentication__resend {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.customer-autentication__resend p {
+    margin-bottom: 0px;
+}
+
+.button-success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 10px;
+    color: white;
+    background: #14A44D;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.button-success img {
+    width: 25px;
+    height: 25px;
+}

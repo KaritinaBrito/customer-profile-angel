@@ -1,0 +1,40 @@
+.header-component {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 25px;
+    align-items: center;
+    border-bottom: 6px solid var(--gray-inactive);
+}
+
+.header-component__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-component__right img {
+    width: 80px;
+}
+
+.header-component__right h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.header-component__left {
+    width: 200px;
+}
+
+.header-component__left-user {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.header-component__left-user h3,
+.header-component__left-user mat-icon {
+    color: var(--text-black);
+    font-size: 16px;
+}
